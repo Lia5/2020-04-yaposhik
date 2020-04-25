@@ -1,0 +1,5 @@
+@import "_mixins/font-face";
+
+@include font-face("BlackerDisplay", "../fonts/BlackerDisplay-Bold/BlackerDisplay-Bold", 700);
+@include font-face("Montserrat", "../fonts/Montserrat-Regular/Montserrat-Regular", 400);
+@include font-face("Montserrat", "../fonts/Montserrat-SemiBold/Montserrat-SemiBold", 600);

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Blacker';
+    src: local('Blacker Display Bold'), local('Blacker-Display-Bold'),
+        url('BlackerDisplay-Bold.woff2') format('woff2'),
+        url('BlackerDisplay-Bold.woff') format('woff'),
+        url('BlackerDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
