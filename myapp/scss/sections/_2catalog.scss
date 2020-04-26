@@ -1,0 +1,51 @@
+.catalog {
+    &__items {
+        display: flex;
+        padding-bottom: 25px;
+    }
+    &__item-wrap {
+        padding-right: 14px;
+    }
+    &__item {
+        display: flex;
+        width: 160px;
+        height: 83px;
+        margin-top: auto;
+        padding: 18px;
+        text-align: right;
+        justify-content: flex-end;
+        align-items: flex-end;
+        color: #161515;
+        background-color: #ffffff;
+        background-size: 100% 100%;
+        font-weight: 600;
+        border-radius: 4px;
+        &:hover {
+            background-color: #FAF9FE;
+        }
+        &--sushi {
+            background-image: url('../img/catalog/1_sushi.png');
+        }
+        &--rolls {
+            background-image: url('../img/catalog/2_rolls.png');
+        }
+        &--sets {
+            background-image: url('../img/catalog/3_sets.png');
+        }
+        &--soup {
+            background-image: url('../img/catalog/4_soup.png');
+        }
+        &--salats {
+            background-image: url('../img/catalog/5_salats.png');
+        }
+        &--lapsha {
+            background-image: url('../img/catalog/6_lapsha.png');
+        }
+        &--deserts {
+            background-image: url('../img/catalog/7_deserts.png');
+        }
+        &--drink {
+            background-image: url('../img/catalog/8_drink.png');
+        }
+    }
+}

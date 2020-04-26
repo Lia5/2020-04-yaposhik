@@ -28,6 +28,57 @@ $(function() {
             }
         });
     }
+    // slider
+
+    if(jQuery('.home-slider__items').length) {
+        $('.home-slider__nav-items').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        focusOnSelect: true,
+        infinite: false,
+        arrows: false,
+        dots: false,
+        rtl: true,
+        vertical: true,
+        asNavFor: '.home-slider__items'
+        });
+
+        $('.home-slider__items').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: true,
+        dots: false,
+        // fade: true,
+        prevArrow: '<div class="arrow-prev"></div>',
+        nextArrow: '<div class="arrow-next"></div>',
+        asNavFor: '.home-slider__nav-items'
+        });
+
+
+        $('a[data-slide]').click(function(e) {
+            e.preventDefault();
+            var slideno = $(this).data('slide');
+            var pic = $(this).data('pic');
+            $('.tale-slider').slick('slickGoTo', slideno - 1);
+            $('.choise1').attr('src', "img/tale/tale"+pic+".jpg");
+            var pic2 = $(this).data('pic');
+            $('.choise2').attr('src', "img/tale/tale"+pic2+".jpg");
+            var giftName = $(this).data('gift');
+            $('.choise3').attr('value', giftName);
+            $('.choise-gift').html('Оставьте, пожалуйста, свои данные, чтобы я смог с вами связаться и передать подарок');
+        });
+        
+        $('.tale-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+            console.log(nextSlide);
+            if (nextSlide==5) {
+                nextSlide=9;
+            }
+        });
+
+    }
+
     if(jQuery('.scroll-to').length) {
         var $page = $('html, body');
         $('.scroll-to[href*="#"]').click(function() {

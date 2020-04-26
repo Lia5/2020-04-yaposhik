@@ -73,6 +73,8 @@ body {
 	// padding-right: 17px;
 }
 .main {
+	position: relative;
+	overflow: hidden;
 	width: 100%;
 	height: 100%;
 	flex-grow: 1;
@@ -108,21 +110,21 @@ b, strong {
 }
 .wrap {
 	width: 100%;
-	max-width: 1240px;
+	max-width: 1420px;
 	padding: 0 20px;
 	margin: 0 auto;
 	@media only screen and (max-width: 1350px) and (orientation: portrait),
 	screen and (max-width: 1080px) {
-		max-width: 750px;
-		padding: 0 15px;
+		// max-width: 750px;
+		// padding: 0 15px;
 	}
 	@media screen and (max-width: 749px){
-		padding: 0 14px;
+		// padding: 0 14px;
 		// max-width: 320px;
 
 	}
 	@media screen and (max-height: 850px) and  (min-width: 1081px) {
-		max-width: 1200px;
+		// max-width: 1200px;
 	}
 }
 a {
@@ -346,18 +348,15 @@ ul,li {
 	}
 }
 
-@import "sections/preloader";
+// @import "sections/preloader";
 @import "sections/header";
 @import "sections/1home";
+@import "sections/2catalog";
 
 @import "sections/modal";
 @import "sections/footer";
 @import "sections/quiz";
 @import "sections/menu-burger";
-
-//pages
-
-@import "pages/page-promo-home";
 
 
 // @import "media"; // Always at the end

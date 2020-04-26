@@ -46,6 +46,30 @@ header {
             text-decoration: none;
         }
     }
+    &__cart {
+        display: flex;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 9px;
+            right: -4px;
+            width: 10px;
+            height: 10px;
+            background: #FF8031;
+            border-radius: 50%;
+        }
+        &.active {
+
+        }
+        svg {
+            fill: #fff;
+            width: 30px;
+            height: 30px;
+            margin: auto;
+        }
+
+    }
 }
 .logo {
     img {
