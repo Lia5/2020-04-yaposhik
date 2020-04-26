@@ -38,43 +38,63 @@ section.home
 
         .home-slider
             .home-slider__nav-items
-                .home-slider__title
-                    .home-slider__name Салат <br>Эби ясай
-                    .home-slider__price 1750P
-                .home-slider__title
-                    .home-slider__name  Горячий ролл <br>Филадельфия Black
-                    .home-slider__price 1750P
-                .home-slider__title
-                    .home-slider__name Удон с <br>морепродуктами
-                    .home-slider__price 1750P
-                .home-slider__title
-                    .home-slider__name Самурай
-                    .home-slider__price 1750P
+                .home-slider__wrap
+                    .home-slider__nav-item
+                        .home-slider__title 
+                            span.home-slider__name Салат <br>Эби ясай
+                            .home-slider__price 1750P
+                        span.slider-circle +
+                .home-slider__wrap
+                    .home-slider__nav-item
+                        .home-slider__title 
+                            span.home-slider__name Горячий ролл <br>Филадельфия Black
+                            .home-slider__price 1750P
+                        span.slider-circle +
+                .home-slider__wrap
+                    .home-slider__nav-item
+                        .home-slider__title 
+                            span.home-slider__name Удон с <br>морепродуктами
+                            .home-slider__price 1750P
+                        span.slider-circle +
+                .home-slider__wrap
+                    .home-slider__nav-item
+                        .home-slider__title 
+                            span.home-slider__name Самурай
+                            .home-slider__price 1750P
+                        span.slider-circle +
             .home-slider__items
                 .home-slider__item
                     .home-slider__pic
                         img(src="img/slider-item1.png", alt="sushi")
-                    .home-slider__title.mob
-                        .home-slider__name Салат Эби ясай
-                        .home-slider__price 1750P
+                    .home-slider__nav-item
+                        span.slider-circle +
+                        .home-slider__title.mob
+                            .home-slider__name Салат Эби ясай
+                            .home-slider__price 1750P
+                .home-slider__item
+                    .home-slider__pic
+                        img(src="img/salat.png", alt="sushi")
+                    .home-slider__nav-item
+                        span.slider-circle +
+                        .home-slider__title.mob
+                            .home-slider__name Горячий ролл Филадельфия Black
+                            .home-slider__price 1750P
                 .home-slider__item
                     .home-slider__pic
                         img(src="img/slider-item1.png", alt="sushi")
-                    .home-slider__title.mob
-                        .home-slider__name Горячий ролл Филадельфия Black
-                        .home-slider__price 1750P
+                    .home-slider__nav-item
+                        span.slider-circle +
+                        .home-slider__title.mob
+                            .home-slider__name Удон с морепродуктами
+                            .home-slider__price 1750P
                 .home-slider__item
                     .home-slider__pic
-                        img(src="img/slider-item1.png", alt="sushi")
-                    .home-slider__title.mob
-                        .home-slider__name Удон с морепродуктами
-                        .home-slider__price 1750P
-                .home-slider__item
-                    .home-slider__pic
-                        img(src="img/slider-item1.png", alt="sushi")
-                    .home-slider__title.mob
-                        .home-slider__name Самурай
-                        .home-slider__price 1750P
+                        img(src="img/salat.png", alt="sushi")
+                    .home-slider__nav-item
+                        span.slider-circle +
+                        .home-slider__title.mob
+                            .home-slider__name Самурай
+                            .home-slider__price 1750P
             .home-slider__count
                 span 0
                 span.current 1

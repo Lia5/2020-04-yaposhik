@@ -49,7 +49,7 @@ $(function() {
         infinite: false,
         arrows: true,
         dots: false,
-        // fade: true,
+        fade: true,
         prevArrow: '<div class="arrow-prev"></div>',
         nextArrow: '<div class="arrow-next"></div>',
         asNavFor: '.home-slider__nav-items'
