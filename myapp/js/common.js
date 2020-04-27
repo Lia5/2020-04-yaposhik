@@ -97,7 +97,10 @@ $(function() {
                   breakpoint: 480,
                   settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    arrows: false
                   }
                 }
             ]

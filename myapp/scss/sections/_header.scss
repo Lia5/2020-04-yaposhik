@@ -19,6 +19,9 @@ header {
     @media screen and (max-height: 850px) and  (min-width: 1081px) {
         padding-top: 10px;
     }
+    @media only screen and (max-width: 785px) {
+        padding-top: 20px;
+    }
 }
 .header {
     &__group {
@@ -44,8 +47,8 @@ header {
             font-size: 18px;
         }
         @media only screen and (max-width: 785px) {
-            font-size: 25px;
-            padding: 20px;
+            font-size: 20px;
+            padding: 15px;
         }
     }
     &__location {
@@ -83,11 +86,16 @@ header {
             right: -4px;
             width: 10px;
             height: 10px;
-            background: #FF8031;
+            background: transparent;
             border-radius: 50%;
+            @media only screen and (max-width: 785px) {
+                top: 24px;
+            }
         }
         &.active {
-
+            &:after {
+                background-color: #FF8031;
+            }
         }
         svg {
             fill: #fff;
@@ -105,11 +113,11 @@ header {
         screen and (max-width: 1080px) {
             width: 84px;
         }
-        @media screen and (max-width: 749px){
-
-        }
     	@media screen and (max-height: 850px) and  (min-width: 1081px) {
             width: 95px;
+        }
+        @media only screen and (max-width: 785px) {
+            width: 88px;
         }
     }
 }

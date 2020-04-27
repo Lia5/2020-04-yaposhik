@@ -8,11 +8,25 @@
         @media screen and (max-height: 850px) and  (min-width: 1081px) {
             padding-bottom: 0;
         }
+        @media only screen and (max-width: 785px) {
+            margin-bottom: 21px;
+        }
+        .slick-list {
+            @media only screen and (max-width: 785px) {
+                margin-left: -50px;
+                margin-right: -20px;
+            }
+        }
+
     }
     &__item-wrap {
         padding-right: 14px;
         @media screen and (max-height: 850px) and  (min-width: 1081px) {
             flex-grow: 1;
+        }
+
+        @media only screen and (max-width: 785px) {
+            flex-grow: unset;
         }
     }
     &__item {
@@ -38,8 +52,8 @@
         screen and (max-width: 1080px) {
             width: 100%;
         }
-        @media screen and (max-width: 749px){
-
+        @media only screen and (max-width: 785px) {
+            width: auto;
         }
         &:hover {
             background-color: #FAF9FE;
@@ -76,6 +90,8 @@
             z-index: 1;
             display: flex;
             justify-content: center;
+            margin-left: 41px;
+            padding-bottom: 27px;
         }
     }
 }

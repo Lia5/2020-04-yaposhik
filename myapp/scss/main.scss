@@ -211,7 +211,7 @@ ul,li {
 	@media only screen and (max-width: 785px) {
 		font-size: 14px;
 		min-width: 188px;
-		padding: 12px;
+		padding: 18px 12px;
 	}
 	&:hover {
 		box-shadow: 0px 7px 18px -6px rgba(255, 128, 49, 0.657);
@@ -223,13 +223,6 @@ ul,li {
 	
 }
 
-.mob {
-	display: none;
-	@media only screen and (max-width: 785px) {
-		display: block;
-	}
-	
-}
 //custom animation
 .blick {
 	position: relative;

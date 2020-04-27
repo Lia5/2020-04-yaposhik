@@ -21,7 +21,7 @@
         font-size: 14px;
     }
     @media only screen and (max-width: 785px) {
-        font-size: 20px;
+        font-size: 15px;
     }
     &__wrap {
         display: flex;
@@ -47,7 +47,7 @@
                 padding: 9px;
             }
             @media only screen and (max-width: 785px) {
-                padding: 22px;
+                padding: 12px;
             }
             &:before {
                 content: "";
