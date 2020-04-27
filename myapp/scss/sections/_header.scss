@@ -15,19 +15,46 @@ nav {
 header {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 37px;
     @media screen and (max-height: 850px) and  (min-width: 1081px) {
-        padding-top: 24px;
+        padding-top: 10px;
     }
 }
 .header {
     &__group {
         display: flex;
+        @media only screen and (max-width: 785px) {
+            justify-content: center;
+        }
+
+    }
+    &__contacts {
+        padding-right: 16px;
+        @media only screen and (max-width: 785px) {
+            padding-left: 30px;
+        }
+    }
+    &__phone {
+        font-size: 20px;
+        @media only screen and (max-width: 1350px) and (orientation: portrait),
+        screen and (max-width: 1080px) {
+            font-size: 18px;
+        }
+        @media screen and (max-height: 850px) and  (min-width: 1081px) {
+            font-size: 18px;
+        }
+        @media only screen and (max-width: 785px) {
+            font-size: 25px;
+            padding: 20px;
+        }
     }
     &__location {
         position: relative;
         padding-left: 30px;
         margin-right: auto;
+        @media screen and (max-width: 1065px) {
+            display: none;
+        }
         &:before {
             content: "";
             position: absolute;
@@ -76,13 +103,13 @@ header {
         width: 104px;
         @media only screen and (max-width: 1350px) and (orientation: portrait),
         screen and (max-width: 1080px) {
-
+            width: 84px;
         }
         @media screen and (max-width: 749px){
 
         }
     	@media screen and (max-height: 850px) and  (min-width: 1081px) {
-
+            width: 95px;
         }
     }
 }

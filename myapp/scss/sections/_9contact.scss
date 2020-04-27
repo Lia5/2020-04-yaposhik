@@ -1,7 +1,8 @@
 .consult {
     background: #f9fbfc;
     padding: 105px 0 190px;
-
+    position: relative;
+    z-index: 1;
     @media screen and (max-width: 1115px) {
         padding: 40px 0;
     }

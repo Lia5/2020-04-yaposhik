@@ -13,8 +13,15 @@
 .main-menu {
     font-size: 16px;
     font-weight: 600;
+    @media only screen and (max-width: 1350px) and (orientation: portrait),
+    screen and (max-width: 1080px) {
+        font-size: 14px;
+    }
     @media screen and (max-height: 850px) and  (min-width: 1081px) {
-        // font-size: 14px;
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 785px) {
+        font-size: 20px;
     }
     &__wrap {
         display: flex;
@@ -32,6 +39,16 @@
         a {
             position: relative;
             padding: 15px;
+            @media only screen and (max-width: 1350px) and (orientation: portrait),
+            screen and (max-width: 1080px) {
+                padding: 11px;
+            }
+            @media screen and (max-height: 850px) and  (min-width: 1081px) {
+                padding: 9px;
+            }
+            @media only screen and (max-width: 785px) {
+                padding: 22px;
+            }
             &:before {
                 content: "";
                 width: 0;
@@ -57,14 +74,14 @@
         }
     }
 }
-@media only screen and (max-width: 749px) {
+@media only screen and (max-width: 785px) {
     .menu-toggle {
         display: block;
         width: 26px;
         height: 23px;
         position: absolute;
         top: -12px;
-        left: 0;
+        right: 0;
         cursor: pointer;
         z-index: 4;
         .one, .two, .three {
@@ -94,7 +111,9 @@
     .main-menu {
         display: none;
         &.active {
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: fixed;
             width: 100%;
             height: 100%;
@@ -105,14 +124,14 @@
             .main-menu__wrap {
                 display: block;
                 color: #fff;
-                padding: 31px 6px 36px 3px;
+                padding: 31px 6px;
                 // flex-direction: column;
                 align-items: center;
-                margin: 11px 15px 0 57px;
                 text-align: center;
                 border-radius: 7px;
                 a {
                     color: #fff;
+                    justify-content: center;
                 }
             } 
             .main-menu__items {
@@ -122,6 +141,7 @@
     }
     .menu-wrap {
         position: absolute;
+        width: 100%;
         padding-left: 25px;
         padding-right: 25px;
     }
