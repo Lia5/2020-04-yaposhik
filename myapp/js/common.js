@@ -153,8 +153,12 @@ $(function() {
     },500);
 
 
+
+});
+
+
     window.addEventListener("orientationchange", function() {
-        if ( window.innerWidth < 920 || window.screen.width < 920) {
+        $(function() {
             if(jQuery('.catalog__items').length) {
                 $('.catalog__items').slick({
                 slidesToShow: 8,
@@ -192,8 +196,5 @@ $(function() {
                 ]
                 });
             }
-        }
+        });
     }, false);
-
-});
-
